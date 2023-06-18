@@ -1,15 +1,15 @@
 {
-    "manifest_version": 3,
     "name": "Mark Groups Down",
     "description": "Export tabs and groups to markdown",
     "version": "0.1",
+    "manifest_version": 3,
     "action": {
         "default_popup": "popup.html"
     },
-    "host_permissions": [
-        "https://developer.chrome.com/*"
-    ],
     "permissions": [
         "tabGroups"
-    ]
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
 }
