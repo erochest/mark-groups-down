@@ -1,8 +1,8 @@
 {
     "compilerOptions": {
         "strict": true,
-        "module": "CommonJS",
-        "target": "ES6",
+        "module": "ESNext",
+        "target": "ES2017",
         "esModuleInterop": true,
         "sourceMap": true,
         "rootDir": "src",

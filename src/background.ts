@@ -7,9 +7,12 @@ function makeColor(color: string): void {
     document.body.style.backgroundColor = color;
 }
 
+console.log('MGD: background script loaded')
+
 chrome.action.onClicked.addListener((tab) => {
     active = !active;
     const color = active ? 'orange' : 'white';
+    console.log('MGD: background script clicked', color);
     chrome.scripting.executeScript({
         target: { tabId: tab.id ? tab.id : -1 },
         func: makeColor,
